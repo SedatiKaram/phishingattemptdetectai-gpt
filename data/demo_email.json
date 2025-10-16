@@ -1,0 +1,5 @@
+{
+  "subject": "URGENT: Password Expiring",
+  "sender": "it-support@corp-secure.com",
+  "body": "Your password expires today. Click http://corp-secure.com-reset.example to avoid account lockout."
+}
