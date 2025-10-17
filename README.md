@@ -29,7 +29,7 @@ Phishing remains the most common initial access vector in real-world breaches. T
 
 ---
 
-## What recruiters should inspect (where to find proof)
+## Where to look
 
 1. **Per-email output**: `out/results.jsonl` — one JSON object per analyzed email with fields like `is_injection`, `phishing_score`, `verdict`, `key_signals`, `indicators`, and `links`.
 2. **Evaluation report**: `out/metrics.json` — contains totals, confusion matrix counts, per-class precision/recall/F1, micro/macro F1 and average phishing score. This is the main proof you evaluated the model on labeled data.
