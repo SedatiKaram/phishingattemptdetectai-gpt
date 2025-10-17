@@ -1,0 +1,9 @@
+{
+  "total": 100,
+  "phishing": 40,
+  "suspicious": 10,
+  "benign": 50,
+  "injection_count": 0,
+  "injection_rate": 0.0,
+  "avg_phishing_score": 0.4365
+}
