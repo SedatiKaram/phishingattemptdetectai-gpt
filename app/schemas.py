@@ -1,6 +1,8 @@
 from pydantic import BaseModel
 from typing import List, Optional
 
+# Data schemas for input emails and analysis results
+
 class LinkInfo(BaseModel):
     text: str
     href: str

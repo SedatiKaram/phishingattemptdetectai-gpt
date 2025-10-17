@@ -6,9 +6,15 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 pip install -U pip -r requirements.txt
 
-Copy-Item .env.example .env # hardcoded change later
+Copy-Item .env.example .env  # add your API key to .env
+notepad .env                  # set LLM_API_KEY (and optionally LLM_MODEL)
 
-notepad .env   # add your API key + model #hardcoded change later
-
+# Analyze a single email (convert .eml to JSON first if needed)
 python -m app.eml_to_json "C:\path\to\email.eml" ".\out\email.json"
 python .\main.py ".\out\email.json"
+
+# Analyze JSONL (all lines or first N lines); results append to out\results.jsonl
+python .\main.py data\samples.jsonl
+python .\main.py data\samples.jsonl 25
+
+# Metrics auto-update to out\metrics.json after each run

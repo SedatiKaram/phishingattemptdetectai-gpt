@@ -4,6 +4,9 @@ from email import policy
 from email.parser import BytesParser
 from html import unescape
 
+# simple eml file to JSON converter from online sources but adjusted for my use case ;)
+# extracts subject, sender, body (text preferred), links, raw headers as JSON
+
 URL_RE = re.compile(r"https?://[^\s>\)\"]+", re.I)
 
 def extract_body(msg):
