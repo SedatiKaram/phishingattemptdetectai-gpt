@@ -21,12 +21,12 @@ Phishing remains the most common initial access vector in real-world breaches. T
 
 ## Quick visual (put your images in `docs/` and link them)
 
-![Overview diagram placeholder](docs/diagram_overview.png)  
+![Overview diagram placeholder](out/diagram_overview.png)  
 *Diagram idea: arrows showing → input `data/*.jsonl` → `main.py` → LLM → `out/results.jsonl` → `app.metrics` → `out/metrics.json`.*
 
 **Metrics snapshot (example)**
 
-![Metrics snapshot placeholder](docs/metrics_snapshot.png)  
+![Metrics snapshot placeholder](out/metrics_snapshot.png)  
 *Replace with a screenshot of `out/metrics.json` or a plot of precision/recall/F1.*
 
 ---
@@ -36,7 +36,3 @@ Phishing remains the most common initial access vector in real-world breaches. T
 1. **Per-email output**: `out/results.jsonl` — one JSON object per analyzed email with fields like `is_injection`, `phishing_score`, `verdict`, `key_signals`, `indicators`, and `links`. :contentReference[oaicite:4]{index=4}  
 2. **Evaluation report**: `out/metrics.json` — contains totals, confusion matrix counts, per-class precision/recall/F1, micro/macro F1 and average phishing score. This is the main proof you evaluated the model on labeled data. :contentReference[oaicite:5]{index=5}  
 3. **Sample dataset**: `data/evaluation_100.jsonl` — JSONL file with one email per line for reproducible testing. (Place your labeled dataset here.) :contentReference[oaicite:6]{index=6}
-
----
-
-## Exact file layout (what to include in the repo)
