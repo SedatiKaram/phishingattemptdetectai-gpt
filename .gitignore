@@ -8,8 +8,9 @@ __pycache__/
 .idea/
 .vscode/
 
-# Outputs and artifacts
-/out/
+/out/*
+!/out/results.jsonl
+!/out/metrics.json
 
 # Local email files
 *.eml
