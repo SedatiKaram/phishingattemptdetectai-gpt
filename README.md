@@ -13,9 +13,9 @@ Phishing remains the most common initial access vector in real-world breaches. T
 ---
 
 ## Project highlights
-- Single-pass LLM pipeline: injection detection + phishing risk scoring in one analysis call. :contentReference[oaicite:1]{index=1}  
-- Supports single JSON email objects and JSONL (one JSON per line). Outputs a per-email JSON model and an aggregated metrics file. :contentReference[oaicite:2]{index=2}
-- Evaluation mode computes class counts, confusion matrix, precision/recall/F1 and writes `out/metrics.json`. :contentReference[oaicite:3]{index=3}
+- Single-pass LLM pipeline: injection detection + phishing risk scoring in one analysis call.
+- Supports single JSON email objects and JSONL (one JSON per line). Outputs a per-email JSON model and an aggregated metrics file.
+- Evaluation mode computes class counts, confusion matrix, precision/recall/F1 and writes `out/metrics.json`.
 
 ---
 
@@ -31,6 +31,6 @@ Phishing remains the most common initial access vector in real-world breaches. T
 
 ## What recruiters should inspect (where to find proof)
 
-1. **Per-email output**: `out/results.jsonl` — one JSON object per analyzed email with fields like `is_injection`, `phishing_score`, `verdict`, `key_signals`, `indicators`, and `links`. :contentReference[oaicite:4]{index=4}  
-2. **Evaluation report**: `out/metrics.json` — contains totals, confusion matrix counts, per-class precision/recall/F1, micro/macro F1 and average phishing score. This is the main proof you evaluated the model on labeled data. :contentReference[oaicite:5]{index=5}  
-3. **Sample dataset**: `data/evaluation_100.jsonl` — JSONL file with one email per line for reproducible testing. (Place your labeled dataset here.) :contentReference[oaicite:6]{index=6}
+1. **Per-email output**: `out/results.jsonl` — one JSON object per analyzed email with fields like `is_injection`, `phishing_score`, `verdict`, `key_signals`, `indicators`, and `links`.
+2. **Evaluation report**: `out/metrics.json` — contains totals, confusion matrix counts, per-class precision/recall/F1, micro/macro F1 and average phishing score. This is the main proof you evaluated the model on labeled data.
+3. **Sample dataset**: `data/evaluation_100.jsonl` — JSONL file with one email per line for reproducible testing. 
