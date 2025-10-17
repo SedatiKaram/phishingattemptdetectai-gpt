@@ -19,15 +19,13 @@ Phishing remains the most common initial access vector in real-world breaches. T
 
 ---
 
-## Quick visual (put your images in `docs/` and link them)
+**Metrics snapshot (analyzed email list)**
 
 ![Overview diagram placeholder](out/diagram_overview.png)  
-*Diagram idea: arrows showing → input `data/*.jsonl` → `main.py` → LLM → `out/results.jsonl` → `app.metrics` → `out/metrics.json`.*
 
-**Metrics snapshot (example)**
+**Metrics snapshot ()**
 
 ![Metrics snapshot placeholder](out/metrics_snapshot.png)  
-*Replace with a screenshot of `out/metrics.json` or a plot of precision/recall/F1.*
 
 ---
 
