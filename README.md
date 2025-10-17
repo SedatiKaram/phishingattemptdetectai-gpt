@@ -1,4 +1,4 @@
-# Phishing Attempt Detector — LLM-Powered Email Security Demo
+# Phishing_Attempt_Detector — LLM-Powered Email Phishing Analyzer +With Prompt Injection Defense
 
 [![Project: PhishingAttemptDetectAI](https://img.shields.io/badge/project-phishing--detector-blue)](https://github.com/SedatiKaram/phishingattemptdetectai-gpt)
 [![Language: Python](https://img.shields.io/badge/language-Python-3776AB)](https://www.python.org)
